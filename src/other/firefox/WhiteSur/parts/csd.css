@@ -2,6 +2,8 @@
 
 @namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
+/* ONLY WORKING ON GNOME, REMOVE TO MAKE IT WORK ON WINDOWS */
+/* -------------------------------------------------------- */
 #main-window {
 	-moz-appearance: -moz-window-titlebar !important;
 }
@@ -10,6 +12,7 @@
 :root[tabsintitlebar]:not([inFullscreen]):not([sizemode="maximized"]) #nav-bar {
 	border-radius: 16px 16px 0 0 !important;
 }
+/* -------------------------------------------------------- */
 
 /* Window buttons: at least 1 button */
 @media (-moz-gtk-csd-minimize-button), (-moz-gtk-csd-maximize-button), (-moz-gtk-csd-close-button) {
