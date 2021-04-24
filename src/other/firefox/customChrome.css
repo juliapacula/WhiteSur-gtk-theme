@@ -1,3 +1,8 @@
+/* Web extension inside browser. */
+.webextension-popup-browser {
+    background: #e2e2e2 !important;
+}
 
-/* Add your own custom styles here */
-
+.tabbrowser-tab[class*="identity-color-"] .tab-content::before {
+    display: none !important;
+}

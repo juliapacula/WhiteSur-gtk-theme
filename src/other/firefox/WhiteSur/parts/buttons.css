@@ -39,7 +39,7 @@
 	box-shadow: var(--gnome-button-box-shadow) !important;
 	border: 1px solid var(--gnome-button-border-color) !important;
 	border-bottom-color: var(--gnome-button-border-accent-color) !important;
-	border-radius: 8px !important;
+	border-radius: 5px !important;
 	padding: 0 4px !important;
 	height: 28px !important;
 	max-height: 28px !important;
@@ -77,19 +77,23 @@
 	padding: 2px 16px !important;
 	position: relative;
 }
+
 #sidebar-switcher-arrow,
 #viewButton .button-menu-dropmarker { /* Arrow position, type b */
 	transform: translate(6px, 0)
 }
+
 .menulist-label-box {
 	padding: 2px 26px 2px 16px !important;
 	position: relative;
 }
+
 .menulist-label-box:after { /* Arrow position */
 	position: absolute !important;
 	right: 8px !important;
 	top: 8px !important;
 }
+
 .menulist-label-box:after { /* Create arrow if icon tag no exist */
 	content: "";
 }
@@ -182,7 +186,7 @@ menulist[open] .menulist-label-box,
 	background: transparent !important;
 	box-shadow: none !important;
 	border-color: transparent !important;
-	border-radius: 8px !important;
+	border-radius: 5px !important;
 }
 
 .subviewbutton-back:not(#hack):not(:active):hover,
@@ -256,7 +260,7 @@ menulist[open] .menulist-label-box,
 .subviewbutton.panel-subview-footer:not(:only-of-type):not(:last-of-type),
 .panel-footer button:not(:only-of-type):not(:last-of-type),
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:last-of-type):not(#appMenu-zoomEnlarge-button),
-#context-navigation menuitem:not(:only-of-type):not(:last-of-type),
+#context-navigation menuitem:not(:last-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-button:not(:last-of-type) {
 	border-top-right-radius: 0 !important;
@@ -269,7 +273,7 @@ menulist[open] .menulist-label-box,
 .subviewbutton.panel-subview-footer:not(:only-of-type):not(:first-of-type),
 .panel-footer button:not(:only-of-type):not(:first-of-type),
 #appMenu-popup .toolbaritem-combined-buttons toolbarbutton:not(:first-of-type):not(#appMenu-fullscreen-button),
-#context-navigation menuitem:not(:only-of-type):not(:first-of-type),
+#context-navigation menuitem:not(:first-of-type),
 .findbar-container toolbarbutton.findbar-find-previous,
 .findbar-container toolbarbutton.findbar-find-next,
 .findbar-button:not(:first-of-type) {
@@ -319,7 +323,7 @@ button.popup-notification-primary-button.popup-notification-button:active,
 	border-color: var(--gnome-button-destructive-action-border-color) !important;
 	border-bottom-color: var(--gnome-button-destructive-action-border-accent-color) !important;
 	box-shadow: var(--gnome-button-destructive-action-box-shadow) !important;
-	text-shadow: 0 -1px rgba(0, 0, 0, 0.558275) !important;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.5) !important;
 }
 
 #editBookmarkPanelRemoveButton:hover,
@@ -341,6 +345,7 @@ button.popup-notification-primary-button.popup-notification-button:active,
 	border-bottom-color: var(--gnome-button-destructive-action-border-accent-color) !important;
 	box-shadow: var(--gnome-button-destructive-action-box-shadow) !important;
 }
+
 .identity-popup-permission-remove-button:not(#hack):hover .button-icon {
 	filter: invert(100%) brightness(200%);
 }

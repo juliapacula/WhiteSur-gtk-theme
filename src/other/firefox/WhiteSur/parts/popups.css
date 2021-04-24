@@ -8,11 +8,12 @@ menupopup {
 	-moz-appearance: none !important;
 	background: var(--gnome-menu-background) !important;
 	border: 1px solid var(--gnome-menu-border-color) !important;
-	border-radius: 8px;
+	border-radius: 5px;
 	padding: 4px 0 !important;
 	color: var(--gnome-toolbar-color) !important;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.06) !important;
 }
+
 menupopup menupopup {
 	margin: -5px 0 0 -4px;
 }
@@ -59,6 +60,7 @@ panelview {
 	padding: 12px !important;
 	color: var(--gnome-toolbar-color) !important;
 }
+
 .panel-arrow {
 	fill: var(--gnome-popover-background) !important;
 	stroke: var(--gnome-popover-border-color) !important;
@@ -71,12 +73,14 @@ panelview {
 .panel-header {
 	padding: 0 0 10px 0 !important;
 }
+
 .panel-footer {
 	background-color: transparent !important;
 	display: flex;
 	justify-content: flex-end;
 	padding-top: 0px !important;
 }
+
 .panel-footer toolbarseparator {
 	display: none !important;
 }
@@ -84,6 +88,7 @@ panelview {
 .panel-subview-body {
 	padding: 0 !important;
 }
+
 .panel-subview-footer {
 	margin-top: 10px !important;
 }
@@ -92,10 +97,11 @@ panelview {
 .subviewbutton:not(.subviewbutton-back),
 .toolbarbutton-1, .protections-popup-category,
 .identity-popup-content-blocking-category {
-	border-radius: 8px !important;
+	border-radius: 5px !important;
 	color: var(--gnome-toolbar-color) !important;
 	font: menu !important;
 }
+
 .subviewbutton:not(.subviewbutton-back),
 .protections-popup-category,
 .identity-popup-content-blocking-category {
@@ -123,9 +129,11 @@ panelview {
 toolbarseparator, menuseparator {
 	border-color: var(--gnome-popover-separator-color) !important;
 }
+
 toolbarseparator:not([orient="vertical"]) {
 	margin: 8px 0 !important;
 }
+
 toolbarseparator[orient="vertical"] {
 	margin: 0 3px !important;
 }
